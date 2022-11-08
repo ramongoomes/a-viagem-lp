@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    
+    
+    background: rgb(98,142,117);
+    background: -moz-linear-gradient(130deg, rgba(98,142,117,1) 0%, rgba(26,72,85,1) 100%) fixed;
+    background: -webkit-linear-gradient(130deg, rgba(98,142,117,1) 0%, rgba(26,72,85,1) 100%) fixed;
+    background: linear-gradient(130deg, rgba(98,142,117,1) 0%, rgba(26,72,85,1) 100%) fixed;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#628e75",endColorstr="#1a4855",GradientType=1);
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-content{
+    width: 70%;
+    margin-top: 40px;
+}
+
+.container-content nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-content nav .social-media{
+    display: flex;
+    align-items:center;
+    
+    
+}
+
+.container-content nav .social-media ul svg{
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    margin-left: 30px;
+}
+
+section{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+section .description h2{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+section .description h1{
+    padding: 14px 0 25px 0;
+    font-size: 68px;
+    font-weight: 900;
+    line-height: 74px;
+    letter-spacing: .3rem;
+}
+
+section .description p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.8px;
+    letter-spacing: 2px;
+}
+
+section .btn-article{
+    width: fit-content;
+    display: flex;
+    margin-top: 46px;
+    
+}
+
+section .btn-article button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 45px;
+    margin-right: 20px;
+    border:2px solid #658E76;
+    background-color:transparent;
+    
+    
+    -webkit-transform: skew(-30deg); 
+    -moz-transform: skew(-30deg); 
+    -o-transform: skew(-30deg); 
+    
+    
+
+}
+
+section .btn-article button:nth-child(1){
+    background-color: #658E76;
+}
+
+section .btn-article button span, button svg{
+    -webkit-transform: skew(+30deg); 
+    -moz-transform: skew(+30deg); 
+    -o-transform: skew(+30deg); 
+}
+
+section .btn-article button span{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+section .btn-article button svg{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+section .container-img img{
+    width: fit-content;
+    animation: float 3s infinite alternate;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(-25px);
+      }
+}
